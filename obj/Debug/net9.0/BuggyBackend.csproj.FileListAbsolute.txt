@@ -19,6 +19,7 @@ C:\Users\kelle\Downloads\BuggyBackend\BuggyBackend\obj\Debug\net9.0\BuggyBackend
 C:\Users\kelle\Downloads\BuggyBackend\BuggyBackend\obj\Debug\net9.0\BuggyBackend.csproj.CoreCompileInputs.cache
 C:\Users\kelle\Downloads\BuggyBackend\BuggyBackend\obj\Debug\net9.0\BuggyBackend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\kelle\Downloads\BuggyBackend\BuggyBackend\obj\Debug\net9.0\BuggyBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kelle\Downloads\BuggyBackend\BuggyBackend\obj\Debug\net9.0\BuggyBackend.sourcelink.json
 C:\Users\kelle\Downloads\BuggyBackend\BuggyBackend\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\kelle\Downloads\BuggyBackend\BuggyBackend\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\kelle\Downloads\BuggyBackend\BuggyBackend\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

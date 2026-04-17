@@ -60,7 +60,7 @@ namespace BuggyBackend.Controllers
             return NewMethod(book);
         }
 
-        public ActionResult<Book> NewMethod(Book book)
+        private ActionResult<Book> NewMethod(Book book)
         {
             try
             {

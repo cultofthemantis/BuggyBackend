@@ -64,28 +64,10 @@ Required services and repositories were not registered in the dependency injecti
 Fix:
 
 builder.Services.AddScoped<IBookRepository, BookRepository>();
-Bug #3: Non-nullable properties not initialized
-
-Location: Models/Book.cs, Models/Member.cs
-Type: C# Nullable Reference Warning
-
-Bug:
-
-public string Title { get; set; }
-
-Error:
-
-CS8618: Non-nullable property must contain a non-null value
-
-Cause:
-Non-nullable properties were declared without default values or constructor initialization.
-
-Fix:
-
-public string Title { get; set; } = string.Empty;
 
 
-Bug #4: Possible null reference return in repositories
+
+Bug #3: Possible null reference return in repositories
 
 Location: Repositories/BookRepository.cs (and similar files)
 Type: Null Safety Warning
@@ -111,16 +93,16 @@ public Book? GetById(int id)
 
 
 
-Bug #5
-private ActionResult<Book> NewMethod(Book book)
+Bug #4
+public ActionResult<Book> NewMethod(Book book)
 
 Location: Controllers/BooksController.cs Line 63
 
-Fix: public ActionResult<Book> NewMethod(Book book)
-    changed private to public to make the function accessible
+Fix: private ActionResult<Book> NewMethod(Book book)
+    changed public to private
 
 
-Bug #6 
+Bug #5
 
 Location: Program.cs lines 11-13
 
@@ -142,7 +124,7 @@ Changed services from scoped to singleton so the data persists
 
 
 
-Bug #7-8
+Bug #6-7
 CORS Policy fix in Program.cs, added AllowAnyOrigin() and used CORS policy at the bottom
 
 

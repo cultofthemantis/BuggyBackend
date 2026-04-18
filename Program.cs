@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
    builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IMemberRepository, MemberRepository>();
@@ -28,13 +28,10 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
 app.UseSwagger();
 app.UseSwaggerUI();
-}
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
 
